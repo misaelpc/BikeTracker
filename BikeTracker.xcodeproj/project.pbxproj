@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0CD8CACF28B91463007901B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CACE28B91463007901B2 /* AppDelegate.swift */; };
 		0CD8CAD128B91463007901B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CAD028B91463007901B2 /* SceneDelegate.swift */; };
-		0CD8CAD328B91463007901B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CAD228B91463007901B2 /* ViewController.swift */; };
+		0CD8CAD328B91463007901B2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CAD228B91463007901B2 /* RootViewController.swift */; };
 		0CD8CAD628B91463007901B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CAD428B91463007901B2 /* Main.storyboard */; };
 		0CD8CAD928B91463007901B2 /* BikeTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CAD728B91463007901B2 /* BikeTracker.xcdatamodeld */; };
 		0CD8CADB28B91466007901B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CADA28B91466007901B2 /* Assets.xcassets */; };
@@ -17,6 +17,21 @@
 		0CD8CAE928B91466007901B2 /* BikeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CAE828B91466007901B2 /* BikeTrackerTests.swift */; };
 		0CD8CAF328B91466007901B2 /* BikeTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CAF228B91466007901B2 /* BikeTrackerUITests.swift */; };
 		0CD8CAF528B91466007901B2 /* BikeTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CAF428B91466007901B2 /* BikeTrackerUITestsLaunchTests.swift */; };
+		0CD8CB1028B91E21007901B2 /* Onboarding+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB0E28B91E21007901B2 /* Onboarding+CoreDataClass.swift */; };
+		0CD8CB1128B91E21007901B2 /* Onboarding+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB0F28B91E21007901B2 /* Onboarding+CoreDataProperties.swift */; };
+		0CD8CB1428B91EA4007901B2 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB1328B91EA4007901B2 /* LocalDataManager.swift */; };
+		0CD8CB1628B91F08007901B2 /* ActiveRecord+NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB1528B91F08007901B2 /* ActiveRecord+NSManagedObject.swift */; };
+		0CD8CB1F28B970F4007901B2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB1E28B970F4007901B2 /* Session.swift */; };
+		0CD8CB2628B97168007901B2 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB2428B97168007901B2 /* User+CoreDataClass.swift */; };
+		0CD8CB2728B97168007901B2 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB2528B97168007901B2 /* User+CoreDataProperties.swift */; };
+		0CD8CB2928B97242007901B2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB2828B97242007901B2 /* Onboarding.storyboard */; };
+		0CD8CB2B28B9728C007901B2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB2A28B9728C007901B2 /* OnboardingViewController.swift */; };
+		0CD8CB2D28B97373007901B2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB2C28B97373007901B2 /* Home.storyboard */; };
+		0CD8CB3028B9A9DC007901B2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB2E28B9A9DC007901B2 /* PageViewController.swift */; };
+		0CD8CB3128B9A9DC007901B2 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB2F28B9A9DC007901B2 /* PageViewController.xib */; };
+		0CD8CB3328B9AE40007901B2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3228B9AE40007901B2 /* Colors.xcassets */; };
+		0CD8CB3628B9C69C007901B2 /* OnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3528B9C69C007901B2 /* OnboardingDelegate.swift */; };
+		0CD8CB3828BA3F13007901B2 /* BikeTracker.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3728BA3F06007901B2 /* BikeTracker.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +55,7 @@
 		0CD8CACB28B91463007901B2 /* BikeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD8CACE28B91463007901B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD8CAD028B91463007901B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0CD8CAD228B91463007901B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CD8CAD228B91463007901B2 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		0CD8CAD528B91463007901B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CD8CAD828B91463007901B2 /* BikeTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BikeTracker.xcdatamodel; sourceTree = "<group>"; };
 		0CD8CADA28B91466007901B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +66,21 @@
 		0CD8CAEE28B91466007901B2 /* BikeTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD8CAF228B91466007901B2 /* BikeTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTrackerUITests.swift; sourceTree = "<group>"; };
 		0CD8CAF428B91466007901B2 /* BikeTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0CD8CB0E28B91E21007901B2 /* Onboarding+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Onboarding+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CD8CB0F28B91E21007901B2 /* Onboarding+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Onboarding+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CD8CB1328B91EA4007901B2 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		0CD8CB1528B91F08007901B2 /* ActiveRecord+NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActiveRecord+NSManagedObject.swift"; sourceTree = "<group>"; };
+		0CD8CB1E28B970F4007901B2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		0CD8CB2428B97168007901B2 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CD8CB2528B97168007901B2 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CD8CB2828B97242007901B2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		0CD8CB2A28B9728C007901B2 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		0CD8CB2C28B97373007901B2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0CD8CB2E28B9A9DC007901B2 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		0CD8CB2F28B9A9DC007901B2 /* PageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
+		0CD8CB3228B9AE40007901B2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0CD8CB3528B9C69C007901B2 /* OnboardingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDelegate.swift; sourceTree = "<group>"; };
+		0CD8CB3728BA3F06007901B2 /* BikeTracker.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = BikeTracker.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +131,10 @@
 		0CD8CACD28B91463007901B2 /* BikeTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0CD8CB3428B9C682007901B2 /* Protocols */,
+				0CD8CB1728B95B5E007901B2 /* Seed */,
+				0CD8CB1228B91E63007901B2 /* CoreDataStack */,
+				0CD8CB0D28B91DB9007901B2 /* Models */,
 				0CD8CB0428B9160E007901B2 /* Delegate */,
 				0CD8CB0328B915AA007901B2 /* StoryBoards */,
 				0CD8CB0228B9158F007901B2 /* Views */,
@@ -108,6 +142,7 @@
 				0CD8CADA28B91466007901B2 /* Assets.xcassets */,
 				0CD8CADF28B91466007901B2 /* Info.plist */,
 				0CD8CAD728B91463007901B2 /* BikeTracker.xcdatamodeld */,
+				0CD8CB3228B9AE40007901B2 /* Colors.xcassets */,
 			);
 			path = BikeTracker;
 			sourceTree = "<group>";
@@ -132,7 +167,9 @@
 		0CD8CB0128B9157B007901B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0CD8CAD228B91463007901B2 /* ViewController.swift */,
+				0CD8CAD228B91463007901B2 /* RootViewController.swift */,
+				0CD8CB2A28B9728C007901B2 /* OnboardingViewController.swift */,
+				0CD8CB2E28B9A9DC007901B2 /* PageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,6 +177,7 @@
 		0CD8CB0228B9158F007901B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0CD8CB2F28B9A9DC007901B2 /* PageViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +187,8 @@
 			children = (
 				0CD8CAD428B91463007901B2 /* Main.storyboard */,
 				0CD8CADC28B91466007901B2 /* LaunchScreen.storyboard */,
+				0CD8CB2828B97242007901B2 /* Onboarding.storyboard */,
+				0CD8CB2C28B97373007901B2 /* Home.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -160,6 +200,43 @@
 				0CD8CACE28B91463007901B2 /* AppDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		0CD8CB0D28B91DB9007901B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CD8CB2428B97168007901B2 /* User+CoreDataClass.swift */,
+				0CD8CB2528B97168007901B2 /* User+CoreDataProperties.swift */,
+				0CD8CB0E28B91E21007901B2 /* Onboarding+CoreDataClass.swift */,
+				0CD8CB0F28B91E21007901B2 /* Onboarding+CoreDataProperties.swift */,
+				0CD8CB1E28B970F4007901B2 /* Session.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CD8CB1228B91E63007901B2 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				0CD8CB1328B91EA4007901B2 /* LocalDataManager.swift */,
+				0CD8CB1528B91F08007901B2 /* ActiveRecord+NSManagedObject.swift */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		0CD8CB1728B95B5E007901B2 /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+				0CD8CB3728BA3F06007901B2 /* BikeTracker.sqlite */,
+			);
+			path = Seed;
+			sourceTree = "<group>";
+		};
+		0CD8CB3428B9C682007901B2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0CD8CB3528B9C69C007901B2 /* OnboardingDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +348,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD8CB3828BA3F13007901B2 /* BikeTracker.sqlite in Resources */,
+				0CD8CB2928B97242007901B2 /* Onboarding.storyboard in Resources */,
+				0CD8CB3128B9A9DC007901B2 /* PageViewController.xib in Resources */,
 				0CD8CADE28B91466007901B2 /* LaunchScreen.storyboard in Resources */,
+				0CD8CB2D28B97373007901B2 /* Home.storyboard in Resources */,
+				0CD8CB3328B9AE40007901B2 /* Colors.xcassets in Resources */,
 				0CD8CADB28B91466007901B2 /* Assets.xcassets in Resources */,
 				0CD8CAD628B91463007901B2 /* Main.storyboard in Resources */,
 			);
@@ -319,10 +401,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CD8CAD328B91463007901B2 /* ViewController.swift in Sources */,
+				0CD8CB1628B91F08007901B2 /* ActiveRecord+NSManagedObject.swift in Sources */,
+				0CD8CAD328B91463007901B2 /* RootViewController.swift in Sources */,
+				0CD8CB1428B91EA4007901B2 /* LocalDataManager.swift in Sources */,
 				0CD8CACF28B91463007901B2 /* AppDelegate.swift in Sources */,
+				0CD8CB2628B97168007901B2 /* User+CoreDataClass.swift in Sources */,
+				0CD8CB1128B91E21007901B2 /* Onboarding+CoreDataProperties.swift in Sources */,
 				0CD8CAD128B91463007901B2 /* SceneDelegate.swift in Sources */,
+				0CD8CB2B28B9728C007901B2 /* OnboardingViewController.swift in Sources */,
+				0CD8CB2728B97168007901B2 /* User+CoreDataProperties.swift in Sources */,
+				0CD8CB1028B91E21007901B2 /* Onboarding+CoreDataClass.swift in Sources */,
+				0CD8CB3628B9C69C007901B2 /* OnboardingDelegate.swift in Sources */,
+				0CD8CB3028B9A9DC007901B2 /* PageViewController.swift in Sources */,
 				0CD8CAD928B91463007901B2 /* BikeTracker.xcdatamodeld in Sources */,
+				0CD8CB1F28B970F4007901B2 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
