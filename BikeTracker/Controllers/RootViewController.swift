@@ -9,6 +9,18 @@ import UIKit
 
 class RootViewController: UIViewController {
 
+  lazy var onboardindViewController: OnboardingViewController? = {
+    return createChildViewController(
+      "Onboarding",
+      "OnboardingViewController") as? OnboardingViewController
+  }()
+
+  lazy var homeViewController: UIViewController = {
+    return createChildViewController(
+      "Home",
+      "HomeViewController")
+  }()
+
   override func viewDidLoad() {
     super.viewDidLoad()
     displayAppContent()
@@ -32,15 +44,12 @@ class RootViewController: UIViewController {
 
   private func displayAppContent() {
     if Session.userIsOnboarded() {
-      let onboardindViewController = createChildViewController("Home", "HomeViewController")
-      addContentViewController(childController: onboardindViewController)
+      addContentViewController(childController: homeViewController)
     } else {
-      guard let onboardindViewController = createChildViewController(
-        "Onboarding",
-        "OnboardingViewController") as? OnboardingViewController
+      guard let onboardindVC = onboardindViewController
       else {return}
-      onboardindViewController.delegate = self
-      addContentViewController(childController: onboardindViewController)
+      onboardindVC.delegate = self
+      addContentViewController(childController: onboardindVC)
     }
   }
 
@@ -59,6 +68,11 @@ class RootViewController: UIViewController {
 
 extension RootViewController: OnboardingDelegate {
   func continueToHome() {
-    debugPrint("Home")
+    guard let onboardindVC = onboardindViewController
+    else {return}
+    onboardindVC.view.removeFromSuperview()
+    onboardindVC.removeFromParent()
+    Session.createUser()
+    addContentViewController(childController: homeViewController)
   }
 }

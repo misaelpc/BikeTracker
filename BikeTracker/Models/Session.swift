@@ -12,4 +12,10 @@ struct Session {
     let users = User.findAll()
     return users.count > 0
   }
+
+  static func createUser() {
+    let user = User.create() as? User
+    user?.onboarded = true
+    user?.save()
+  }
 }
