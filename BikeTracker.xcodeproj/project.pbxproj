@@ -32,6 +32,8 @@
 		0CD8CB3328B9AE40007901B2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3228B9AE40007901B2 /* Colors.xcassets */; };
 		0CD8CB3628B9C69C007901B2 /* OnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3528B9C69C007901B2 /* OnboardingDelegate.swift */; };
 		0CD8CB3828BA3F13007901B2 /* BikeTracker.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3728BA3F06007901B2 /* BikeTracker.sqlite */; };
+		0CD8CB3A28BA5AE7007901B2 /* TrakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3928BA5AE7007901B2 /* TrakingViewController.swift */; };
+		0CD8CB3C28BA5B19007901B2 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3B28BA5B19007901B2 /* ProgressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		0CD8CB3228B9AE40007901B2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0CD8CB3528B9C69C007901B2 /* OnboardingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDelegate.swift; sourceTree = "<group>"; };
 		0CD8CB3728BA3F06007901B2 /* BikeTracker.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = BikeTracker.sqlite; sourceTree = "<group>"; };
+		0CD8CB3928BA5AE7007901B2 /* TrakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrakingViewController.swift; sourceTree = "<group>"; };
+		0CD8CB3B28BA5B19007901B2 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				0CD8CAD228B91463007901B2 /* RootViewController.swift */,
 				0CD8CB2A28B9728C007901B2 /* OnboardingViewController.swift */,
 				0CD8CB2E28B9A9DC007901B2 /* PageViewController.swift */,
+				0CD8CB3928BA5AE7007901B2 /* TrakingViewController.swift */,
+				0CD8CB3B28BA5B19007901B2 /* ProgressViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -412,7 +418,9 @@
 				0CD8CB2728B97168007901B2 /* User+CoreDataProperties.swift in Sources */,
 				0CD8CB1028B91E21007901B2 /* Onboarding+CoreDataClass.swift in Sources */,
 				0CD8CB3628B9C69C007901B2 /* OnboardingDelegate.swift in Sources */,
+				0CD8CB3C28BA5B19007901B2 /* ProgressViewController.swift in Sources */,
 				0CD8CB3028B9A9DC007901B2 /* PageViewController.swift in Sources */,
+				0CD8CB3A28BA5AE7007901B2 /* TrakingViewController.swift in Sources */,
 				0CD8CAD928B91463007901B2 /* BikeTracker.xcdatamodeld in Sources */,
 				0CD8CB1F28B970F4007901B2 /* Session.swift in Sources */,
 			);
