@@ -82,7 +82,7 @@ extension NSManagedObject {
     let context = localDataManager.persistentContainer.viewContext
     let request = NSFetchRequest<NSFetchRequestResult>()
     request.entity = NSEntityDescription.entity(forEntityName: entityName(), in: context)
-    request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
+    request.sortDescriptors = [NSSortDescriptor(key: "createdAt", ascending: true)]
 
     let controller = NSFetchedResultsController(fetchRequest: request,
                                                 managedObjectContext: context,

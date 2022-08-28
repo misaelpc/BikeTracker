@@ -34,6 +34,20 @@
 		0CD8CB3828BA3F13007901B2 /* BikeTracker.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3728BA3F06007901B2 /* BikeTracker.sqlite */; };
 		0CD8CB3A28BA5AE7007901B2 /* TrakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3928BA5AE7007901B2 /* TrakingViewController.swift */; };
 		0CD8CB3C28BA5B19007901B2 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3B28BA5B19007901B2 /* ProgressViewController.swift */; };
+		0CD8CB4028BAD59C007901B2 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3E28BAD59C007901B2 /* ActionViewController.swift */; };
+		0CD8CB4128BAD59C007901B2 /* ActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB3F28BAD59C007901B2 /* ActionViewController.xib */; };
+		0CD8CB4328BBCDA0007901B2 /* TrackingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB4228BBCDA0007901B2 /* TrackingProtocol.swift */; };
+		0CD8CB4528BBCF46007901B2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB4428BBCF46007901B2 /* LocationManager.swift */; };
+		0CD8CB4728BBDE7C007901B2 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB4628BBDE7C007901B2 /* StopWatch.swift */; };
+		0CD8CB4928BBF0A6007901B2 /* Route.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB4828BBF0A6007901B2 /* Route.gpx */; };
+		0CD8CB4E28BBFCD7007901B2 /* TrackedLocations+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB4A28BBFCD7007901B2 /* TrackedLocations+CoreDataClass.swift */; };
+		0CD8CB4F28BBFCD7007901B2 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB4B28BBFCD7007901B2 /* Activity+CoreDataProperties.swift */; };
+		0CD8CB5028BBFCD7007901B2 /* TrackedLocations+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB4C28BBFCD7007901B2 /* TrackedLocations+CoreDataProperties.swift */; };
+		0CD8CB5128BBFCD7007901B2 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB4D28BBFCD7007901B2 /* Activity+CoreDataClass.swift */; };
+		0CD8CB5428BC074C007901B2 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB5228BC074C007901B2 /* ActivityTableViewCell.swift */; };
+		0CD8CB5528BC074C007901B2 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD8CB5328BC074C007901B2 /* ActivityTableViewCell.xib */; };
+		0CD8CB5728BC0ECA007901B2 /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8CB5628BC0ECA007901B2 /* Tracking.swift */; };
+		EA92569571F7796A86FEDA68 /* libPods-BikeTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E861B323B7E7ACC994D6C53 /* libPods-BikeTracker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +99,22 @@
 		0CD8CB3728BA3F06007901B2 /* BikeTracker.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = BikeTracker.sqlite; sourceTree = "<group>"; };
 		0CD8CB3928BA5AE7007901B2 /* TrakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrakingViewController.swift; sourceTree = "<group>"; };
 		0CD8CB3B28BA5B19007901B2 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		0CD8CB3E28BAD59C007901B2 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		0CD8CB3F28BAD59C007901B2 /* ActionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionViewController.xib; sourceTree = "<group>"; };
+		0CD8CB4228BBCDA0007901B2 /* TrackingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingProtocol.swift; sourceTree = "<group>"; };
+		0CD8CB4428BBCF46007901B2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0CD8CB4628BBDE7C007901B2 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		0CD8CB4828BBF0A6007901B2 /* Route.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Route.gpx; sourceTree = "<group>"; };
+		0CD8CB4A28BBFCD7007901B2 /* TrackedLocations+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackedLocations+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CD8CB4B28BBFCD7007901B2 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CD8CB4C28BBFCD7007901B2 /* TrackedLocations+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackedLocations+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0CD8CB4D28BBFCD7007901B2 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0CD8CB5228BC074C007901B2 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		0CD8CB5328BC074C007901B2 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		0CD8CB5628BC0ECA007901B2 /* Tracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracking.swift; sourceTree = "<group>"; };
+		0E861B323B7E7ACC994D6C53 /* libPods-BikeTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BikeTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		413DE39BE59168B901251A2A /* Pods-BikeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeTracker.release.xcconfig"; path = "Target Support Files/Pods-BikeTracker/Pods-BikeTracker.release.xcconfig"; sourceTree = "<group>"; };
+		47177CD53212D76B4C43D3EF /* Pods-BikeTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeTracker.debug.xcconfig"; path = "Target Support Files/Pods-BikeTracker/Pods-BikeTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA92569571F7796A86FEDA68 /* libPods-BikeTracker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +150,8 @@
 				0CD8CAE728B91466007901B2 /* BikeTrackerTests */,
 				0CD8CAF128B91466007901B2 /* BikeTrackerUITests */,
 				0CD8CACC28B91463007901B2 /* Products */,
+				4B0DA12E5B6C6F591D54E7DC /* Pods */,
+				AAB21BB7137E1FB3D8070CFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +168,7 @@
 		0CD8CACD28B91463007901B2 /* BikeTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0CD8CB3D28BAC03F007901B2 /* Frameworks */,
 				0CD8CB3428B9C682007901B2 /* Protocols */,
 				0CD8CB1728B95B5E007901B2 /* Seed */,
 				0CD8CB1228B91E63007901B2 /* CoreDataStack */,
@@ -144,6 +178,7 @@
 				0CD8CB0228B9158F007901B2 /* Views */,
 				0CD8CB0128B9157B007901B2 /* Controllers */,
 				0CD8CADA28B91466007901B2 /* Assets.xcassets */,
+				0CD8CB4828BBF0A6007901B2 /* Route.gpx */,
 				0CD8CADF28B91466007901B2 /* Info.plist */,
 				0CD8CAD728B91463007901B2 /* BikeTracker.xcdatamodeld */,
 				0CD8CB3228B9AE40007901B2 /* Colors.xcassets */,
@@ -176,6 +211,7 @@
 				0CD8CB2E28B9A9DC007901B2 /* PageViewController.swift */,
 				0CD8CB3928BA5AE7007901B2 /* TrakingViewController.swift */,
 				0CD8CB3B28BA5B19007901B2 /* ProgressViewController.swift */,
+				0CD8CB3E28BAD59C007901B2 /* ActionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,7 +219,10 @@
 		0CD8CB0228B9158F007901B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0CD8CB3F28BAD59C007901B2 /* ActionViewController.xib */,
 				0CD8CB2F28B9A9DC007901B2 /* PageViewController.xib */,
+				0CD8CB5228BC074C007901B2 /* ActivityTableViewCell.swift */,
+				0CD8CB5328BC074C007901B2 /* ActivityTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,11 +250,18 @@
 		0CD8CB0D28B91DB9007901B2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0CD8CB4D28BBFCD7007901B2 /* Activity+CoreDataClass.swift */,
+				0CD8CB4B28BBFCD7007901B2 /* Activity+CoreDataProperties.swift */,
+				0CD8CB4A28BBFCD7007901B2 /* TrackedLocations+CoreDataClass.swift */,
+				0CD8CB4C28BBFCD7007901B2 /* TrackedLocations+CoreDataProperties.swift */,
 				0CD8CB2428B97168007901B2 /* User+CoreDataClass.swift */,
 				0CD8CB2528B97168007901B2 /* User+CoreDataProperties.swift */,
 				0CD8CB0E28B91E21007901B2 /* Onboarding+CoreDataClass.swift */,
 				0CD8CB0F28B91E21007901B2 /* Onboarding+CoreDataProperties.swift */,
 				0CD8CB1E28B970F4007901B2 /* Session.swift */,
+				0CD8CB4428BBCF46007901B2 /* LocationManager.swift */,
+				0CD8CB4628BBDE7C007901B2 /* StopWatch.swift */,
+				0CD8CB5628BC0ECA007901B2 /* Tracking.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,8 +287,33 @@
 			isa = PBXGroup;
 			children = (
 				0CD8CB3528B9C69C007901B2 /* OnboardingDelegate.swift */,
+				0CD8CB4228BBCDA0007901B2 /* TrackingProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0CD8CB3D28BAC03F007901B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B0DA12E5B6C6F591D54E7DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47177CD53212D76B4C43D3EF /* Pods-BikeTracker.debug.xcconfig */,
+				413DE39BE59168B901251A2A /* Pods-BikeTracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AAB21BB7137E1FB3D8070CFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E861B323B7E7ACC994D6C53 /* libPods-BikeTracker.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,18 +323,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CD8CAF828B91466007901B2 /* Build configuration list for PBXNativeTarget "BikeTracker" */;
 			buildPhases = (
+				0DBA22DA68EA445515581F24 /* [CP] Check Pods Manifest.lock */,
 				0CD8CAC728B91463007901B2 /* Sources */,
 				0CD8CAC828B91463007901B2 /* Frameworks */,
 				0CD8CAC928B91463007901B2 /* Resources */,
 				0CD8CB0828B917E1007901B2 /* Run SwiftLint */,
+				10320A9ACF8387C90EE47B7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BikeTracker;
-			packageProductDependencies = (
-			);
 			productName = BikeTracker;
 			productReference = 0CD8CACB28B91463007901B2 /* BikeTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -336,8 +407,6 @@
 				Base,
 			);
 			mainGroup = 0CD8CAC228B91463007901B2;
-			packageReferences = (
-			);
 			productRefGroup = 0CD8CACC28B91463007901B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,7 +428,10 @@
 				0CD8CB3128B9A9DC007901B2 /* PageViewController.xib in Resources */,
 				0CD8CADE28B91466007901B2 /* LaunchScreen.storyboard in Resources */,
 				0CD8CB2D28B97373007901B2 /* Home.storyboard in Resources */,
+				0CD8CB4128BAD59C007901B2 /* ActionViewController.xib in Resources */,
 				0CD8CB3328B9AE40007901B2 /* Colors.xcassets in Resources */,
+				0CD8CB4928BBF0A6007901B2 /* Route.gpx in Resources */,
+				0CD8CB5528BC074C007901B2 /* ActivityTableViewCell.xib in Resources */,
 				0CD8CADB28B91466007901B2 /* Assets.xcassets in Resources */,
 				0CD8CAD628B91463007901B2 /* Main.storyboard in Resources */,
 			);
@@ -400,6 +472,45 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		0DBA22DA68EA445515581F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BikeTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10320A9ACF8387C90EE47B7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BikeTracker/Pods-BikeTracker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BikeTracker/Pods-BikeTracker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BikeTracker/Pods-BikeTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -408,20 +519,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CD8CB1628B91F08007901B2 /* ActiveRecord+NSManagedObject.swift in Sources */,
+				0CD8CB4028BAD59C007901B2 /* ActionViewController.swift in Sources */,
 				0CD8CAD328B91463007901B2 /* RootViewController.swift in Sources */,
 				0CD8CB1428B91EA4007901B2 /* LocalDataManager.swift in Sources */,
 				0CD8CACF28B91463007901B2 /* AppDelegate.swift in Sources */,
 				0CD8CB2628B97168007901B2 /* User+CoreDataClass.swift in Sources */,
 				0CD8CB1128B91E21007901B2 /* Onboarding+CoreDataProperties.swift in Sources */,
+				0CD8CB4728BBDE7C007901B2 /* StopWatch.swift in Sources */,
 				0CD8CAD128B91463007901B2 /* SceneDelegate.swift in Sources */,
+				0CD8CB4E28BBFCD7007901B2 /* TrackedLocations+CoreDataClass.swift in Sources */,
 				0CD8CB2B28B9728C007901B2 /* OnboardingViewController.swift in Sources */,
 				0CD8CB2728B97168007901B2 /* User+CoreDataProperties.swift in Sources */,
+				0CD8CB5028BBFCD7007901B2 /* TrackedLocations+CoreDataProperties.swift in Sources */,
 				0CD8CB1028B91E21007901B2 /* Onboarding+CoreDataClass.swift in Sources */,
 				0CD8CB3628B9C69C007901B2 /* OnboardingDelegate.swift in Sources */,
+				0CD8CB4328BBCDA0007901B2 /* TrackingProtocol.swift in Sources */,
+				0CD8CB5128BBFCD7007901B2 /* Activity+CoreDataClass.swift in Sources */,
 				0CD8CB3C28BA5B19007901B2 /* ProgressViewController.swift in Sources */,
+				0CD8CB5728BC0ECA007901B2 /* Tracking.swift in Sources */,
 				0CD8CB3028B9A9DC007901B2 /* PageViewController.swift in Sources */,
 				0CD8CB3A28BA5AE7007901B2 /* TrakingViewController.swift in Sources */,
+				0CD8CB4F28BBFCD7007901B2 /* Activity+CoreDataProperties.swift in Sources */,
 				0CD8CAD928B91463007901B2 /* BikeTracker.xcdatamodeld in Sources */,
+				0CD8CB5428BC074C007901B2 /* ActivityTableViewCell.swift in Sources */,
+				0CD8CB4528BBCF46007901B2 /* LocationManager.swift in Sources */,
 				0CD8CB1F28B970F4007901B2 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +715,7 @@
 		};
 		0CD8CAF928B91466007901B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47177CD53212D76B4C43D3EF /* Pods-BikeTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -622,6 +744,7 @@
 		};
 		0CD8CAFA28B91466007901B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 413DE39BE59168B901251A2A /* Pods-BikeTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

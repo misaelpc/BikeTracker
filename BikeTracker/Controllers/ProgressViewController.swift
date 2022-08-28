@@ -6,23 +6,52 @@
 //
 
 import UIKit
+import CoreData
 
 class ProgressViewController: UIViewController {
+  @IBOutlet weak var tableView: UITableView!
+  var resulsController: NSFetchedResultsController<NSFetchRequestResult>?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    setupTableView()
+    updateData()
+      // Do any additional setup after loading the view.
+  }
 
-        // Do any additional setup after loading the view.
+  func setupTableView() {
+    self.tableView.register(UINib(nibName: "ActivityTableViewCell",
+                                bundle: nil), forCellReuseIdentifier: "ActivityTableViewCell")
+  }
+
+  func updateData() {
+    resulsController = Activity.resultsController()
+    resulsController?.delegate = self
+  }
+}
+
+extension ProgressViewController: UITableViewDelegate, UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    guard let sections = self.resulsController?.sections else {
+        fatalError("No sections in fetchedResultsController")
     }
+    let sectionInfo = sections[section]
+    return sectionInfo.numberOfObjects
+  }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let activity = self.resulsController?.object(at: indexPath) as? Activity else {
+        fatalError("Attempt to configure cell without a managed object")
     }
-    */
+    let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityTableViewCell",
+    for: indexPath) as? ActivityTableViewCell
+    cell?.bind(activity: activity)
+    return cell!
+  }
+}
 
+extension ProgressViewController: NSFetchedResultsControllerDelegate {
+  func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+    tableView.reloadData()
+  }
 }
