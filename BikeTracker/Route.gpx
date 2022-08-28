@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="Xcode">
+
+  <wpt lat="19.3775411" lon="-99.0554911">
+    <name>WP001</name>
+    <time>2018-03-27T18:28:04Z</time>
+  </wpt>
+  <wpt lat="19.3775411" lon="-99.0554911">
+    <name>WP002</name>
+    <time>2018-03-27T18:28:06Z</time>
+  </wpt>
+  <wpt lat="19.3787922" lon="-99.0506186">
+    <name>WP003</name>
+    <time>2018-03-27T18:28:08Z</time>
+  </wpt>
+  <wpt lat="19.3745841" lon="-99.0417358">
+    <name>WP004</name>
+    <time>2018-03-27T18:28:10Z</time>
+  </wpt>
+  <wpt lat="19.3700832" lon="-99.0354325">
+    <name>WP005</name>
+    <time>2018-03-27T18:28:12Z</time>
+  </wpt>
+  <wpt lat="19.3647038" lon="-99.0277716">
+    <name>WP006</name>
+    <time>2018-03-27T18:28:14Z</time>
+  </wpt>
+  <wpt lat="19.3641183" lon="-99.022923">
+    <name>WP007</name>
+    <time>2018-03-27T18:28:16Z</time>
+  </wpt>
+  <wpt lat="19.366131" lon="-99.0197228">
+    <name>WP008</name>
+    <time>2018-03-27T18:28:18Z</time>
+  </wpt>
+  <wpt lat="19.3626179" lon="-99.0151845">
+    <name>WP009</name>
+    <time>2018-03-27T18:28:20Z</time>
+  </wpt>
+</gpx>

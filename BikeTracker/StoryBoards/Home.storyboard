@@ -14,41 +14,61 @@
             <objects>
                 <viewController id="blv-de-J7u" customClass="ProgressViewController" customModule="BikeTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G1V-w9-zTr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="691"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g1F-Ts-9tJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="691"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="blv-de-J7u" id="ns5-Yb-bXz"/>
+                                    <outlet property="delegate" destination="blv-de-J7u" id="Wgb-DO-arq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cnc-Ha-2hZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g1F-Ts-9tJ" firstAttribute="top" secondItem="G1V-w9-zTr" secondAttribute="top" id="4MZ-aY-rWU"/>
+                            <constraint firstItem="g1F-Ts-9tJ" firstAttribute="leading" secondItem="cnc-Ha-2hZ" secondAttribute="leading" id="V9i-NU-OlE"/>
+                            <constraint firstItem="g1F-Ts-9tJ" firstAttribute="bottom" secondItem="cnc-Ha-2hZ" secondAttribute="bottom" id="Zv6-hb-GRD"/>
+                            <constraint firstItem="g1F-Ts-9tJ" firstAttribute="trailing" secondItem="cnc-Ha-2hZ" secondAttribute="trailing" id="fFp-Ry-TKM"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Progress" image="icn-list" id="eKM-9v-q2t"/>
+                    <navigationItem key="navigationItem" title="My Progress" prompt="  " id="xZK-LG-4NZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="g1F-Ts-9tJ" id="W5B-4i-hPu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPy-uR-lra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="409"/>
+            <point key="canvasLocation" x="1834.7826086956522" y="408.48214285714283"/>
         </scene>
         <!--Current Ride-->
         <scene sceneID="02S-hJ-2IK">
             <objects>
                 <viewController id="uKf-9h-7UP" customClass="TrakingViewController" customModule="BikeTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zXo-bS-O0t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="691"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8Lm-33-QBU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Current Ride" image="icn-bike" id="TDs-7k-0T0"/>
+                    <navigationItem key="navigationItem" title="Current Ride" prompt="  " id="qpU-q9-3rJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPJ-jn-k70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="-367"/>
+            <point key="canvasLocation" x="1808.6956521739132" y="-367.63392857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="apa-mN-A8E">
             <objects>
                 <tabBarController storyboardIdentifier="HomeViewController" id="BJx-EA-oKJ" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JjM-83-eS8">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="JjM-83-eS8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" name="Orange"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
@@ -57,13 +77,55 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="uKf-9h-7UP" kind="relationship" relationship="viewControllers" id="qfZ-eg-fPC"/>
-                        <segue destination="blv-de-J7u" kind="relationship" relationship="viewControllers" id="etP-ql-IcJ"/>
+                        <segue destination="zIN-W0-pIH" kind="relationship" relationship="viewControllers" id="qfZ-eg-fPC"/>
+                        <segue destination="ag1-eW-lG2" kind="relationship" relationship="viewControllers" id="etP-ql-IcJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8Q-Pj-kNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-366" y="104"/>
+        </scene>
+        <!--Current Ride-->
+        <scene sceneID="yL0-Vv-FYn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zIN-W0-pIH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Current Ride" image="icn-bike" id="TDs-7k-0T0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Zx7-hX-R1o">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Orange"/>
+                        <color key="barTintColor" name="Orange"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uKf-9h-7UP" kind="relationship" relationship="rootViewController" id="l1J-o5-4d1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0y-6u-byg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898.55072463768124" y="-367.63392857142856"/>
+        </scene>
+        <!--My Progress-->
+        <scene sceneID="Pno-qD-KxP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ag1-eW-lG2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Progress" image="icn-list" id="eKM-9v-q2t"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="gfc-7k-wA8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Orange"/>
+                        <color key="barTintColor" name="Orange"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="blv-de-J7u" kind="relationship" relationship="rootViewController" id="GOq-sk-OOR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Va-Yy-wgt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.63768115942037" y="408.48214285714283"/>
         </scene>
     </scenes>
     <resources>

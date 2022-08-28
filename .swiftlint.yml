@@ -1,0 +1,5 @@
+included:
+  - BikeTracker
+
+excluded:
+  - Pods
